@@ -1,0 +1,154 @@
+/* Configuración general del fondo de la pantalla */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0c1b; /* Morado noche ultra oscuro */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    color: #e0e0e0; /* Letras gris blanco por defecto */
+}
+
+/* La tarjeta central contenedora */
+.container {
+    background: #1a162b; /* Morado oscuro para la caja */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #2d264d; /* Borde sutil morado */
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #ffffff; /* Blanco puro */
+    margin-top: 0;
+    font-size: 24px;
+}
+
+/* Sección de la barra de texto y botón agregar */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* La barra donde se escribe el texto */
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #443775; /* Borde morado intermedio */
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #251f3d; /* Fondo morado grisáceo */
+    color: #ffffff;            /* Texto del usuario en blanco */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Al hacer clic dentro del input, el borde brilla */
+input:focus {
+    border-color: #8a2be2; /* Morado neón */
+}
+
+/* Texto de sugerencia */
+input::placeholder {
+    color: #8882a0; /* Gris morado suave */
+    opacity: 1;
+}
+
+/* Botón base general */
+button {
+    padding: 12px 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98); /* Efecto de click */
+}
+
+/* Botón Agregar específico */
+#addBtn {
+    background-color: #6f42c1; /* Morado clásico */
+}
+
+#addBtn:hover {
+    background-color: #59339d;
+}
+
+/* Sección que contiene los botones de acción inferior */
+.actions-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+/* Botón para copiar todo */
+#copyBtn {
+    background-color: #8a2be2; /* Morado eléctrico / Neón */
+    width: 100%;
+}
+
+#copyBtn:hover {
+    background-color: #721cb8;
+}
+
+/* NUEVO: Botón de borrar todo (Peligro) */
+.danger-btn {
+    background-color: #a62b4c; /* Rojo vino oscuro para combinar con el morado */
+    width: 100%;
+}
+
+.danger-btn:hover {
+    background-color: #851e3a;
+}
+
+/* Contenedor flexible de las etiquetas */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* El diseño de cada Tag individual generado */
+.tag-item {
+    background-color: #2d264d; /* Fondo morado medio */
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #e0e0e0; /* Letras gris blanco */
+    border: 1px solid #3d3369;
+}
+
+/* Botón de eliminar (X) dentro de cada tag */
+.delete-btn {
+    background: #ff4a5a; /* Rojo vibrante */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 0;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background: #d92b3a;
+}

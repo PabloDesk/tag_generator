@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tags</title>
+    <!-- Conexión con los estilos en modo oscuro -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Transformador de Tags</h1>
+
+    <!-- Barra de entrada de texto -->
+    <div class="input-section">
+        <input type="text" id="tagInput" placeholder="Ej: big face, cute, brown eyes">
+        <button id="addBtn">Agregar</button>
+    </div>
+
+    <!-- Sección de acciones masivas -->
+    <div class="actions-section">
+        <button id="copyBtn">Copiar todo al portapapeles</button>
+        <button id="clearAllBtn" class="danger-btn">Borrar todos los tags</button>
+    </div>
+
+    <!-- Contenedor donde JavaScript dibujará los tags -->
+    <div id="tagsContainer" class="tags-container"></div>
+</div>
+
+<!-- Conexión con la lógica de JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
